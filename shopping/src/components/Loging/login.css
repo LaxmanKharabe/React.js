@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form {
+    border:1px solid gray;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px gray;
+}
+button{
+    margin: 10px;
+}
