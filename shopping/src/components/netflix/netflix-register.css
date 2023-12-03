@@ -1,0 +1,20 @@
+.registerContainer{
+    width: 65% !important;
+}
+.cInSty{
+    background-color: transparent;
+    border: none !important;
+    outline: 1px solid gray;
+    padding: 1.2vw;
+    border-radius: 1vw !important;
+    width: 50% !important;
+}
+.cBtSty{
+    padding: 1.2;
+    border-radius: 1vw !important;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.7) !important;
+    transition: color 0.3s ease-out;
+  }
