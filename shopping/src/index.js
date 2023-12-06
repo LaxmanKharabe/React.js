@@ -8,11 +8,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import { NetflixIndex } from './components/netflix/netflix-index';
 import { OnewayBinding } from './components/Oneway-binding/one-waybinding';
+import { DataTypesBinding } from './components/Oneway-binding/DatatypesBinding';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <OnewayBinding />
+    <DataTypesBinding />
   </React.StrictMode>
 );
 
