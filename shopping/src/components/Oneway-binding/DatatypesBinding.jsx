@@ -5,6 +5,12 @@ export function DataTypesBinding(){
     var stock = true;
     var result = 10/3;
 
+    var topics = [
+        {"title" : "HTML", "desc": "xyz"},
+        {"title" : "CSS", "desc": "pqrz"}
+
+    ]
+    var data = [[10,20,30], [40,50,60]]
     return(
         
         <div className="container-fluid">
@@ -36,6 +42,20 @@ export function DataTypesBinding(){
                 <dt>Result of 10/3 is: </dt>
                 <dd>{Math.round(result)}</dd>
             </dl>
+
+           <div>
+                <dl>
+                    {
+                        topics.map(tp => 
+                        <>
+                           <dt>{tp.title}</dt>
+                           <dd>{tp.desc}</dd>
+                        </>
+                        )
+                    }
+                </dl>
+           </div>
+
         </div>
     )
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    <input type="text" id="userData">
+    <button onclick="sendData()">Submit</button>
+    <script>
+        function sendData(){
+            let userName = document.getElementById('userData').value;
+            localStorage.setItem('uname', userName);
+            location.href = "welcome.html";
+        }
+    </script>
+</body>
+</html>

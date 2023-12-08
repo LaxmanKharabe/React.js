@@ -9,11 +9,12 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import { NetflixIndex } from './components/netflix/netflix-index';
 import { OnewayBinding } from './components/Oneway-binding/one-waybinding';
 import { DataTypesBinding } from './components/Oneway-binding/DatatypesBinding';
-
+import { ComplexDataBinding } from './components/Oneway-binding/complexData';
+import { ComplexData } from './components/Oneway-binding/complexData2';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DataTypesBinding />
+    <ComplexData />
   </React.StrictMode>
 );
 
