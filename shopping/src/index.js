@@ -11,10 +11,11 @@ import { OnewayBinding } from './components/Oneway-binding/one-waybinding';
 import { DataTypesBinding } from './components/Oneway-binding/DatatypesBinding';
 import { ComplexDataBinding } from './components/Oneway-binding/complexData';
 import { ComplexData } from './components/Oneway-binding/complexData2';
+import { UseState } from './components/useState()/UseStateHook';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ComplexData />
+    <UseState />
   </React.StrictMode>
 );
 

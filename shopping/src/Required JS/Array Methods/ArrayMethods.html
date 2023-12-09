@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        p {
+            /* line-height: 10px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <details class="fw-bold">
+            <summary>map(callback(element, index, array)): </summary>
+            <p class="lead fs-6">Creates a new array by calling a function for each element in the array.</p>
+            <p class="lead fs-6">Values comming from map(): <br>
+                <span id="mapData"></span><br>
+                <span id="mapData1"></span><br>
+                <span id="mapData2"></span><br>
+                <span id="mapData3"></span><br>
+
+            </p>
+        </details>
+    </div>
+
+    <script>
+        const numbers = [1, 2, 3];
+        const doubledNumbers = numbers.map(num => num * 2);
+        document.getElementById("mapData").innerHTML = doubledNumbers;
+
+        // const array = ['apple', 'banana', 'kiwi'];
+        // const newArray = array.map((element, index, array1) => {
+        //     console.log(`Index: ${index}, Element: ${element} Array: ${array1}`);
+        //     return ` ${index + 1}. <br> ${element}  <br> || Array: ${array1} ||`;
+        // });
+        // console.log(newArray);
+        // document.write(newArray);
+
+        
+    </script>
+</body>
+
+</html>
