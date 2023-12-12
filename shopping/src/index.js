@@ -12,10 +12,12 @@ import { DataTypesBinding } from './components/Oneway-binding/DatatypesBinding';
 import { ComplexDataBinding } from './components/Oneway-binding/complexData';
 import { ComplexData } from './components/Oneway-binding/complexData2';
 import { UseState } from './components/useState()/UseStateHook';
+import { TwowayBinding } from './components/Twoway-binding/TwowayBinding';
+import { ExampleSecond } from './components/Twoway-binding/exampleSecond';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UseState />
+    <ExampleSecond />
   </React.StrictMode>
 );
 
