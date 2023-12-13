@@ -33,7 +33,7 @@ export function FlipkartPracExam() {
             {
                 products.map((productData, index) =>
                     <div className="row mt-2" key={index}>
-                        <div className="col-2">
+                        <div className="col-3 text-center">
                             <img src={productData.photo.mobile} alt={productData.photo.mobile} width="200" />
                         </div>
                         <div className="col-6">
@@ -52,7 +52,7 @@ export function FlipkartPracExam() {
                                 }
                             </ul>
                         </div>
-                        <div className="col-4">
+                        <div className="col-3">
                             <p>
                                 <span className="h4 me-5">{productData.price}</span>
                                 <img src={productData.photo.Assured} width="100" alt={productData.photo.Assured} />

@@ -10,17 +10,7 @@
             "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
         ],
         "photo" : {"mobile" : "iphone14Blue.png", "Assured" : "assuredImg.png"},
-        "price" : 57500,
-        "offer" : {
-            "mobile128" : {
-                "orignalPrice" : 69900,
-                "discount" : 15
-            },
-            "mobile256" : {
-                "orignalPrice" : 79900,
-                "discount" : 12
-            }
-        }
+        "price" : 57500  
     },
     {
         "title" : "APPLE iPhone 14 (Black, 128 GB)",
@@ -33,17 +23,7 @@
             "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
         ],
         "photo" : {"mobile" : "iphone14Black.png", "Assured" : "assuredImg.png"},
-        "price" : 57000,
-        "offer" : {
-            "mobile128" : {
-                "orignalPrice" : 69900,
-                "discount" : 15
-            },
-            "mobile256" : {
-                "orignalPrice" : 79900,
-                "discount" : 12
-            }
-        }
+        "price" : 57000  
     },
     {
         "title" : "APPLE iPhone 14 (Starlight, 128 GB)",
@@ -56,17 +36,7 @@
             "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
         ],
         "photo" : {"mobile" : "iphone14Starlight.png", "Assured" : "assuredImg.png"},
-        "price" : 59000,
-        "offer" : {
-            "mobile128" : {
-                "orignalPrice" : 69900,
-                "discount" : 15
-            },
-            "mobile256" : {
-                "orignalPrice" : 79900,
-                "discount" : 12
-            }
-        }
+        "price" : 59000  
     },
 
 
@@ -82,17 +52,7 @@
             "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
         ],
         "photo" : {"mobile" : "iphone14Blue.png", "Assured" : "assuredImg.png"},
-        "price" : 69000,
-        "offer" : {
-            "mobile128" : {
-                "orignalPrice" : 69900,
-                "discount" : 15
-            },
-            "mobile256" : {
-                "orignalPrice" : 79900,
-                "discount" : 12
-            }
-        }
+        "price" : 69000  
     },
     {
         "title" : "APPLE iPhone 14 (Black, 256 GB)",
@@ -105,17 +65,7 @@
             "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
         ],
         "photo" : {"mobile" : "iphone14Black.png", "Assured" : "assuredImg.png"},
-        "price" : 69000,
-        "offer" : {
-            "mobile128" : {
-                "orignalPrice" : 69900,
-                "discount" : 15
-            },
-            "mobile256" : {
-                "orignalPrice" : 79900,
-                "discount" : 12
-            }
-        }
+        "price" : 69000  
     },
     {
         "title" : "APPLE iPhone 14 (Starlight, 256 GB)",
@@ -128,17 +78,7 @@
             "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
         ],
         "photo" : {"mobile" : "iphone14Starlight.png", "Assured" : "assuredImg.png"},
-        "price" : 69000,
-        "offer" : {
-            "mobile128" : {
-                "orignalPrice" : 69900,
-                "discount" : 15
-            },
-            "mobile256" : {
-                "orignalPrice" : 79900,
-                "discount" : 12
-            }
-        }
+        "price" : 69000  
     }
     
 ]
