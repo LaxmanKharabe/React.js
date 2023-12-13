@@ -1,0 +1,144 @@
+[
+    {
+        "title" : "APPLE iPhone 14 (Blue, 128 GB)",
+        "ratings" : {"rate" : 4.5, "count" : 248289, "Reviews" : 9536},
+        "features" : [
+            "256 GB ROM",
+            "15.49 cm (6.1 inch) Super Retina XDR Display",
+            "12MP + 12MP | 12MP Front Camera",
+            "A15 Bionic Chip, 6 Core Processor Processor",
+            "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+        ],
+        "photo" : {"mobile" : "iphone14Blue.png", "Assured" : "assuredImg.png"},
+        "price" : 57500,
+        "offer" : {
+            "mobile128" : {
+                "orignalPrice" : 69900,
+                "discount" : 15
+            },
+            "mobile256" : {
+                "orignalPrice" : 79900,
+                "discount" : 12
+            }
+        }
+    },
+    {
+        "title" : "APPLE iPhone 14 (Black, 128 GB)",
+        "ratings" : {"rate" : 4.5, "count" : 248289, "Reviews" : 9536},
+        "features" : [
+            "256 GB ROM",
+            "15.49 cm (6.1 inch) Super Retina XDR Display",
+            "12MP + 12MP | 12MP Front Camera",
+            "A15 Bionic Chip, 6 Core Processor Processor",
+            "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+        ],
+        "photo" : {"mobile" : "iphone14Black.png", "Assured" : "assuredImg.png"},
+        "price" : 57000,
+        "offer" : {
+            "mobile128" : {
+                "orignalPrice" : 69900,
+                "discount" : 15
+            },
+            "mobile256" : {
+                "orignalPrice" : 79900,
+                "discount" : 12
+            }
+        }
+    },
+    {
+        "title" : "APPLE iPhone 14 (Starlight, 128 GB)",
+        "ratings" : {"rate" : 4.5, "count" : 248289, "Reviews" : 9536},
+        "features" : [
+            "256 GB ROM",
+            "15.49 cm (6.1 inch) Super Retina XDR Display",
+            "12MP + 12MP | 12MP Front Camera",
+            "A15 Bionic Chip, 6 Core Processor Processor",
+            "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+        ],
+        "photo" : {"mobile" : "iphone14Starlight.png", "Assured" : "assuredImg.png"},
+        "price" : 59000,
+        "offer" : {
+            "mobile128" : {
+                "orignalPrice" : 69900,
+                "discount" : 15
+            },
+            "mobile256" : {
+                "orignalPrice" : 79900,
+                "discount" : 12
+            }
+        }
+    },
+
+
+
+    {
+        "title" : "APPLE iPhone 14 (Blue, 256 GB)",
+        "ratings" : {"rate" : 4.5, "count" : 248289, "Reviews" : 9536},
+        "features" : [
+            "256 GB ROM",
+            "15.49 cm (6.1 inch) Super Retina XDR Display",
+            "12MP + 12MP | 12MP Front Camera",
+            "A15 Bionic Chip, 6 Core Processor Processor",
+            "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+        ],
+        "photo" : {"mobile" : "iphone14Blue.png", "Assured" : "assuredImg.png"},
+        "price" : 69000,
+        "offer" : {
+            "mobile128" : {
+                "orignalPrice" : 69900,
+                "discount" : 15
+            },
+            "mobile256" : {
+                "orignalPrice" : 79900,
+                "discount" : 12
+            }
+        }
+    },
+    {
+        "title" : "APPLE iPhone 14 (Black, 256 GB)",
+        "ratings" : {"rate" : 4.5, "count" : 248289, "Reviews" : 9536},
+        "features" : [
+            "256 GB ROM",
+            "15.49 cm (6.1 inch) Super Retina XDR Display",
+            "12MP + 12MP | 12MP Front Camera",
+            "A15 Bionic Chip, 6 Core Processor Processor",
+            "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+        ],
+        "photo" : {"mobile" : "iphone14Black.png", "Assured" : "assuredImg.png"},
+        "price" : 69000,
+        "offer" : {
+            "mobile128" : {
+                "orignalPrice" : 69900,
+                "discount" : 15
+            },
+            "mobile256" : {
+                "orignalPrice" : 79900,
+                "discount" : 12
+            }
+        }
+    },
+    {
+        "title" : "APPLE iPhone 14 (Starlight, 256 GB)",
+        "ratings" : {"rate" : 4.5, "count" : 248289, "Reviews" : 9536},
+        "features" : [
+            "256 GB ROM",
+            "15.49 cm (6.1 inch) Super Retina XDR Display",
+            "12MP + 12MP | 12MP Front Camera",
+            "A15 Bionic Chip, 6 Core Processor Processor",
+            "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+        ],
+        "photo" : {"mobile" : "iphone14Starlight.png", "Assured" : "assuredImg.png"},
+        "price" : 69000,
+        "offer" : {
+            "mobile128" : {
+                "orignalPrice" : 69900,
+                "discount" : 15
+            },
+            "mobile256" : {
+                "orignalPrice" : 79900,
+                "discount" : 12
+            }
+        }
+    }
+    
+]

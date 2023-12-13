@@ -14,10 +14,12 @@ import { ComplexData } from './components/Oneway-binding/complexData2';
 import { UseState } from './components/useState()/UseStateHook';
 import { TwowayBinding } from './components/Twoway-binding/TwowayBinding';
 import { ExampleSecond } from './components/Twoway-binding/exampleSecond';
+import { Flipkart } from './components/Flipkart/flipkart';
+import { FlipkartPracExam } from './components/Flipkart/FlipkartpracExam';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ExampleSecond />
+    <FlipkartPracExam />
   </React.StrictMode>
 );
 
