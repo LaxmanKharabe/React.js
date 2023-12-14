@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter and Arguments</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <dl class="ms-2">
+        <dt>Parameter:</dt>
+        <dd>A parameter is a variable that is used in the function declaration.</dd>
+        <dt>Purpose of Parameters:</dd>
+        <dd>Parameters act as placeholders for values that the function will receive when it is called.</dd>
+        <dt>Syntax: </dt>
+        <dd>
+        <pre>
+            function exampleFunction(parameter1, parameter2) {
+                // Function body
+            }              
+        </pre>
+        </dd>
+
+        <dt>Argument:</dt>
+        <dd>An argument is a value that is passed to a function when calling or invoking that function.</dd>
+        <dt>Purpose of Argument:</dt>
+        <dd>Arguments supply specific data to the parameters defined in the function.</dd>
+        <dt>Syntax: </dt>
+        <dd>exampleFunction(argument1, argument2);</dd>
+
+
+        <dt>Example: </dt>
+        <dd><pre>
+        // Function declaration with parameters
+        function add(number1, number2) {
+            // Function body: Adds two numbers and returns the result
+            return number1 + number2;
+        }
+
+        // Function call with arguments
+        const result = add(5, 3);
+
+        // Output the result
+        console.log(result); // Output: 8
+        </pre></dd>
+    </dl>
+    <script>
+        // Function declaration with parameters
+        function add(number1, number2) {
+            // Function body: Adds two numbers and returns the result
+            return number1 + number2;
+        }
+
+        // Function call with arguments
+        const result = add(5, 3);
+
+        // Output the result
+        console.log(result); // Output: 8
+
+    </script>
+</body>
+
+</html>

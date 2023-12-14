@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <dl class="ms-2">
+        <dt>Spread: (...)</dt>
+        <dd>
+            <ul>
+                <li>The spread syntax (...) is often referred to as the "spread operator" in JavaScript.</li>
+                <li>It is widely used for <u>spreading the elements of an iterable</u> (like an array) or the properties of an object.</li>
+                <li>Spread is an approach of configuring the one actual value that spreading content into multiple formal parameters.</li>
+                <li>Spread value must be a collection[].</li>
+            </ul>
+        </dd>
+        <dt>Syntax: </dt>
+        <dd>...iterable</dd>
+        <dt>Example: </dt>
+    </dl>
+    <pre>
+        EX1:
+        const products = [101, "iPhone 13", 59000, "In Stock"];
+        var [id, name, price, stock] = products;
+        console.log(...products); // Spread
+
+
+        //Ex2: Copying Objects:
+        const student = { name: "John", age: 30 };
+        const newStudent = {...student};
+        console.log(student); // Output: { name: "John", age: 30 }
+        console.log(newStudent); // Output: { name: "John", age: 30 }
+
+        //Ex3: Combining Arrays
+        const numbers1 = [1, 2, 3];
+        const numbers2 = [4, 5, 6];
+        const combinedNumbers = [...numbers1, ...numbers2];
+        console.log(combinedNumbers); // Output: [1, 2, 3, 4, 5, 6]
+
+        //Ex4: Adding element to an existing array:
+        array1.push(...["pushed element1", "pushed element2"]);
+        console.log(array1);
+
+        //Ex5: Coping an array:
+        const copiedArray1 = [...array1];
+        console.log("Copied array: " + copiedArray1);
+
+        //Ex6: Adding properties to an existing object:
+        const newStudentObj = {...student, id: 101, course: "JavaScript"} // Added new properties while copying.
+        console.log(newStudentObj);
+
+        //Ex7: Spread in functions
+        // Spread in functions
+        var array4 = [];
+        var val = 0;
+        for(let i = 1; i&lt;=3; i++){
+            var val = window.prompt("Enter array values: ")
+            array4.push(+val); // + will convert string numbers into number datatype.
+        }
+        console.log(array4);
+
+        function add (a,b,c){
+            return a+b+c;
+        }
+        // var numbers = [1,2,3];
+        console.log("Addition is: " +add(...array4));
+    </pre>
+
+    <script>
+        const products = [101, "iPhone 13", 59000, "In Stock"];
+        var [id, name, price, stock] = products;
+        console.log(...products); // spread
+
+        // Copying Objects:
+        const student = { name: "John", age: 30 };
+        const newStudent = {...student};
+        console.log(student); // Output: { name: "John", age: 30 }
+        console.log(newStudent); // Output: { name: "John", age: 30 }
+
+        // Combining Arrays:
+        const array1 = [1,2,3,4];
+        const array2 = [5,6,7,8];
+        const combinedArr = [...array1, ...array2];
+        console.log(combinedArr);
+
+        // Adding element to an existing array:
+        array1.push(...["pushed element1", "pushed element2"]);
+        console.log(array1);
+
+        // Coping an array:
+        const copiedArray1 = [...array1];
+        console.log("Copied array: " + copiedArray1);
+
+        // Adding properties to an existing object:
+        const newStudentObj = {...student, id: 101, course: "JavaScript"} // Added new properties while copying.
+        console.log(newStudentObj);
+
+        // Spread in functions
+        var array4 = [];
+        var val = 0;
+        for(let i = 1; i<=3; i++){
+            var val = window.prompt("Enter numbers for addition: ")
+            array4.push(+val); // + will convert string numbers into number datatype.
+        }
+        console.log(array4);
+
+        function add (a,b,c){
+            return a+b+c;
+        }
+        // var numbers = [1,2,3];
+        console.log("Addition is: " +add(...array4));
+    </script>
+</body>
+
+</html>

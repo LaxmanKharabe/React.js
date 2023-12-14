@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Parameters</title>
+</head>
+
+<body>
+    <h3>REST Parameter</h3>
+    <p>REST parameter allows a function to accept multiple arguments as an array.</p>
+    <p>It is denoted by three dots (...) followed by the parameter name.</p>
+    <p>The REST parameter must be the last parameter in the function's parameter list, as it collects all the remaining
+        arguments.</p>
+    <p>Every function have one and only REST parameter.</p>
+
+    <h3>Syntax:</h3>
+    <pre>
+        function restPara (para1, para2, ...restParameter){
+            // Function body
+        }
+    </pre>
+    
+    <h3>Example: </h3>
+    <pre>
+        function Details(...products) { // ...products is a REST parameter
+            var [id, name, price, stock] = products;  // Array Destructuring : we can assign values from an array to variables.
+            document.write(`ID: ${id} &lt;br&gt; Name: ${name} &lt;br&gt; Price: ${price} &lt;br&gt;Stock: ${stock} &lt;br&gt;`)
+        }
+        Details(101, "iPhone 14", 59000, "In Stock");
+
+        function add (...values){
+            var result = 0;
+            for (const allValues of values){
+               result += allValues;
+            }
+            return result;
+        }
+        document.write(`Addition is: ${add(12,10,1)}`); 
+    </pre>
+    <p>Output of above code is: </p>
+    <script>
+        function Details(...products) { // ...products is a REST parameter
+            var [id, name, price, stock] = products;  // Array Destructuring : we can assign values from an array to variables.
+            document.write(`ID: ${id} <br> Name: ${name} <br> Price: ${price} <br>Stock: ${stock} <br>`)
+        }
+        Details(101, "iPhone 14", 59000, "In Stock");
+
+        function add (...values){
+            var result = 0;
+            for (const allValues of values){
+               result += allValues;
+            }
+            return result;
+        }
+        document.write(`Addition is: ${add(12,10,1)}`); 
+    </script>
+</body>
+
+</html>
