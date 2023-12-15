@@ -16,10 +16,15 @@ import { TwowayBinding } from './components/Twoway-binding/TwowayBinding';
 import { ExampleSecond } from './components/Twoway-binding/exampleSecond';
 import { Flipkart } from './components/Flipkart/flipkart';
 import { FlipkartPracExam } from './components/Flipkart/FlipkartpracExam';
+import { UseEffecHook } from './components/useEffectHook/UseEffectHook';
+import { UseEffectExample } from './components/useEffectHook/useEffectExample';
+import { FackStore } from './components/useEffectHook/fakestoreapi';
+import NavbarComponent from './components/Navbar/Navbar';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FlipkartPracExam />
+    <FackStore />
   </React.StrictMode>
 );
 
