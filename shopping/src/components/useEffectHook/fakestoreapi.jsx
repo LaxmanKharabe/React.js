@@ -1,86 +1,102 @@
 import { useEffect, useState } from "react";
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
 export function FackStore() {
 
-    const [products, setProducts] = useState([{ "id": 0, "title": "", "price": 0, "description": "", "category": "", "image": "", "rating": { "rate": 0, "count": 0 } }]);
-    const [productsCategory, setCategory] = useState([]);
-    const [oncatChange, setonCatShange] = useState([]);
+    const [categories, setCategories] = useState([]);
+    const [products, setProducts] = useState([{ id: 0, title: '', image: '', price: 0, description: '', category: '', rating: { rate: 0, count: 0 } }]);
+    const [cartCount, setCartCount] = useState(0);
+    const [cartItems, setCartItems] = useState([]);
+    const [updateItems, setUpdateItems] = useState([]);
+    function LoadCategories() {
+        fetch("https://fakestoreapi.com/products/categories")
+            .then(res => res.json())
+            .then(categories => {
+                categories.unshift("all");
+                setCategories(categories);
+            })
+    }
 
-    function productsData(url) {
+    function LoadProducts(url) {
         fetch(url)
             .then(res => res.json())
             .then(products => {
                 setProducts(products);
-                // console.log(products);
             })
     }
+    function handleCategoryChange(e) {
+        if (e.target.value == "all") {
+            LoadProducts("https://fakestoreapi.com/products");
+        } else {
+            LoadProducts(`https://fakestoreapi.com/products/category/${e.target.value}`);
+        }
+    }
 
-    function prodCategory(url) {
-        fetch('https://fakestoreapi.com/products/categories')
+    function handleAddToCartClick(e) {
+        fetch(`https://fakestoreapi.com/products/${e.target.value}`)
             .then(res => res.json())
-            .then(productsCategory => {
-                productsCategory.unshift('All');
-                setCategory(productsCategory);
-                // console.log(productsCategory);
-            });
+            .then(product => {
+                cartItems.push(product);
+                setCartCount(cartItems.length);
+                // alert(`${product.title}\nAdded to Cart`);
+            })
     }
-    function handleOnCategoryChange(e) {
-        productsData(`http://fakestoreapi.com/products/category/${e.target.value}`);
-    }
-    useEffect(() => {
-        productsData('https://fakestoreapi.com/products');
-        prodCategory();
-    }, [])
+    // function displayCartItems(e){
+    //     setUpdateItems([{
+    //         title: cartItems.title,
+    //         image: cartItems.image
+    //     }
+    //     ])
+    // }
 
+    function displayCartItems() {
+        const updatedItems = cartItems.map(item => {
+            return {
+                title: item.title,
+                image: item.image
+            };
+        });
+    
+        setUpdateItems(updatedItems);
+    }
+    
+    useEffect(() => {
+        LoadCategories();
+        LoadProducts("https://fakestoreapi.com/products");
+    }, []);
 
     return (
         <div className="container-fluid">
-            <Navbar expand="lg" bg="light" className="mb-2 ps-2 pe-2">
-                <Navbar.Brand href="#">Navbar</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarSupportedContent" />
-                <Navbar.Collapse id="navbarSupportedContent">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#" className="nav-link active">
-                            Home
-                        </Nav.Link>
-                        <Nav.Link href="#" className="nav-link">
-                            Link
-                        </Nav.Link>
-                        <NavDropdown title="Dropdown" id="navbarDropdown">
-                            <NavDropdown.Item href="#" className="dropdown-item">
-                                Action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#" className="dropdown-item">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#" className="dropdown-item">
-                                Something else here
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#" className="nav-link disabled" disabled>
-                            Disabled
-                        </Nav.Link>
-                    </Nav>
-
-                    <Button className="btn position-relative btn-light">
+            <header className="d-flex justify-content-between p-3 bg-dark text-white">
+                <div>
+                    <span className="h4">Shopper.</span>
+                </div>
+                <div>
+                    <span className="me-3">Home</span>
+                    <span className="me-3">Electronics</span>
+                    <span className="me-3">Jewelery</span>
+                    <span className="me-3">Men's Fashion</span>
+                    <span className="me-3">Women's Fashion</span>
+                </div>
+                <div>
+                    <button className="btn position-relative btn-light" onClick={displayCartItems}>
                         My cart <span className="bi bi-cart"></span>
-                        <span className="badge text-white bg-danger rounded-circle position-absolute" style={{ top: '-10px', right: '-5px' }}>0</span>
-                    </Button>
-                </Navbar.Collapse>
-            </Navbar>
-            <div className="row postion-relative top-5">
+                        <span className="badge text-white bg-danger rounded-circle position-absolute" style={{ top: '-10px', right: '-5px' }}>{cartCount}</span>
+                    </button>
+
+                </div>
+            </header>
+
+            <div className="row mt-4 p-3">
                 <div className="col-3">
-                    <select className="form-select w-75" onChange={handleOnCategoryChange}>
+                    <select className="form-select w-75" onChange={handleCategoryChange}>
                         {
-                            productsCategory.map(cate =>
+                            categories.map(cate =>
                                 <option key={cate} value={cate}>{cate.toUpperCase()}</option>
                             )
                         }
                     </select>
                 </div>
-                <div className="col-7">
+                <div className="col-5">
                     {
                         products.map(productsData =>
                             <div key={productsData.id} className="row">
@@ -101,8 +117,7 @@ export function FackStore() {
                                             {(productsData.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
 
                                         </p>
-                                        <button className="btn btn-danger me-2 w-25">Add to cart</button>
-                                        <button className="btn btn-danger w-25">Buy</button>
+                                        <button className="btn btn-danger me-2 w-50" value={productsData.id} onClick={handleAddToCartClick}>Add to cart</button>
                                     </div>
                                 </div>
 
@@ -111,8 +126,31 @@ export function FackStore() {
                     }
                 </div>
 
-                <div className="col-2">
-
+                <div className="col-4">
+                    <div className="row">
+                        <table className="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    updateItems.map(item =>
+                                        <tr>
+                                            <td style={{fontSize: '14px'}}>{item.title}</td>
+                                            <td>
+                                                <a href={item.image} target="_blank">
+                                                    <img src={item.image}  width="25" height="25" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    )
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

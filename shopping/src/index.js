@@ -19,7 +19,7 @@ import { FlipkartPracExam } from './components/Flipkart/FlipkartpracExam';
 import { UseEffecHook } from './components/useEffectHook/UseEffectHook';
 import { UseEffectExample } from './components/useEffectHook/useEffectExample';
 import { FackStore } from './components/useEffectHook/fakestoreapi';
-import NavbarComponent from './components/Navbar/Navbar';
+import { Shopping } from './components/useEffectHook/shopping';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
