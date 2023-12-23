@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Arrow function</h1>
+    <script>
+        let Add = (a,b) => a+b;
+        console.log(`Addition is: ${Add(20,30)}`);
+
+        const printName = myName => console.log(`My name is: ${myName}`);
+        printName('Laxman');
+ 
+        const objPara = (...Obj) => {
+            const [Name, role, years] = Obj;
+            console.log(`My Name is ${Name} and I'm a ${role} with ${years} years of experience`);
+        };
+        objPara('Laxman', 'React.js Developer', 2.7);
+
+        const objPara1 = ({ Name, role, years }) => console.log(`My Name is ${Name} and I'm a ${role} with ${years} years of experience`);
+        objPara1({ Name: 'Laxman', role: 'React.js Developer', years: 2.7 });
+
+        const objPara2 = (name, role, years) => {
+            console.log(`My Name is ${name} and I'm a ${role} with ${years} years of experience`);
+        };
+        const val = ['Laxman', 'React.js Developer', 2.7];
+        objPara2(...val);
+
+        const products = [
+            {Name: "TV", Category: "Electronics"},
+            {Name: "Mobile", Category: "Electronics"},
+            {Name: "Nike casuals", Category: "Footwear"},
+            {Name: "Table", Category: "Furniture"}
+        ];
+        let elecCate = products.filter(elecProducts => elecProducts.Category == "Electronics");
+        console.log(elecCate);
+    </script>
+</body>
+</html>

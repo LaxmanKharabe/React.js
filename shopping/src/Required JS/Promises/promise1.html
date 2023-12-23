@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Promise example 1
+        const fetchData = () => new Promise(resolve => setTimeout(() => resolve("Data fetched"), 2000));
+        // Consuming the promise
+        fetchData().then(data => console.log(data)).catch(error => console.error(error));
+
+
+        // Promise example 2
+        function fetchData1() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    const data = { message: 'Data fetched successfully!' };
+                    resolve(data);
+
+                    // reject(new Error('Failed to fetch data!'));
+                }, 1000);
+            });
+        }
+
+        // Using the promise
+        fetchData1()
+            .then((result) => {
+                console.log(result.message);
+            })
+            .catch((error) => {
+                console.error(error.message);
+            });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Wait 3 seconds (3000 milliseconds) for this page to change.</h2>
+    <dl>
+        <dt><h3>Using Callback</h3></dt>
+        <dd>
+            <h4 id="demo"></h4>
+            <pre>
+            setInterval() with a Callback
+            EX: Using Callbacks 
+            setTimeout(function () { myFunction("I love You !!!"); }, 3000);
+            
+            function myFunction(value) {
+                document.getElementById("demo").innerHTML = value;
+            }
+            Output: I love You !!!
+            </pre>
+        </dd>
+        <dt><h3>Using Promise</h3></dt>
+        <dd>
+            <h4 id="demo1"></h4>
+            <pre>
+            const myPromise = new Promise(function(myResolve, myReject) {
+                setTimeout(function(){ myResolve("I love You !!"); }, 3000);
+              });
+              
+              myPromise.then(function(value) {
+                document.getElementById("demo").innerHTML = value;
+              });
+              Output: I love You !!!
+            </pre>
+        </dd>
+    </dl>
+
+    <script>
+        setTimeout(function () { myFunction("I love You !!!"); }, 3000);
+        function myFunction(value) {
+            document.getElementById("demo1").innerHTML = value;
+        }
+
+
+        const myPromise = new Promise(function (myResolve, myReject) {
+            setTimeout(function () { myResolve("I love You !!"); }, 3000);
+        });
+
+        myPromise.then(function (value) {
+            document.getElementById("demo").innerHTML = value;
+        });
+    </script>
+    </script>
+</body>
+
+</html>

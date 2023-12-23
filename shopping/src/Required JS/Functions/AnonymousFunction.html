@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous function</title>
+</head>
+<body>
+    <h1>Anonymous function</h1>
+    <p>A function without name is knows as Anonymous function</p>
+    <pre>
+        (function(reactJS){
+            document.write(`Hello ! ${reactJS}`)
+        })('Reacj Js Developers');
+
+        const add = function(a, b) {
+            return a + b;
+        };
+        console.log(add(10,30));
+
+        const multile = (a, b) => a * b;
+        console.log(multile(10,30));
+    </pre>
+    <script>
+        (function(reactJS){
+            document.write(`Output: Hello ! ${reactJS}`)
+        })('Reacj Js Developers');
+
+        const add = function(a, b) {
+            return a + b;
+        };
+        console.log(add(10,30));
+
+        const multile = (a, b) => a * b;
+        console.log(multile(10,30));
+
+    </script>
+</body>
+</html>
