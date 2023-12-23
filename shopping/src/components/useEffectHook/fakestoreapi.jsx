@@ -37,26 +37,11 @@ export function FackStore() {
             .then(product => {
                 cartItems.push(product);
                 setCartCount(cartItems.length);
-                // alert(`${product.title}\nAdded to Cart`);
             })
     }
-    // function displayCartItems(e){
-    //     setUpdateItems([{
-    //         title: cartItems.title,
-    //         image: cartItems.image
-    //     }
-    //     ])
-    // }
-
     function displayCartItems() {
-        const updatedItems = cartItems.map(item => {
-            return {
-                title: item.title,
-                image: item.image
-            };
-        });
-    
-        setUpdateItems(updatedItems);
+        // setUpdateItems(cartItems.item, cartItems.image);
+        setUpdateItems(cartItems.map(({ title, image }) => ({ title, image })));
     }
     
     useEffect(() => {
