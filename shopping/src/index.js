@@ -20,11 +20,14 @@ import { UseEffecHook } from './components/useEffectHook/UseEffectHook';
 import { UseEffectExample } from './components/useEffectHook/useEffectExample';
 import { FackStore } from './components/useEffectHook/fakestoreapi';
 import { Shopping } from './components/useEffectHook/shopping';
+import { StyleBinding } from './components/Style-Binding/styleBinding';
+import { HideShow } from './components/Style-Binding/hindshowStyleBinding';
+import { ClassBinding } from './components/ClassBinding/classbinding';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FackStore />
+    <ClassBinding />
   </React.StrictMode>
 );
 
