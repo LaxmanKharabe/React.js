@@ -23,11 +23,21 @@ import { Shopping } from './components/useEffectHook/shopping';
 import { StyleBinding } from './components/Style-Binding/styleBinding';
 import { HideShow } from './components/Style-Binding/hindshowStyleBinding';
 import { ClassBinding } from './components/ClassBinding/classbinding';
+import { ClassBindingEx } from './components/ClassBinding/class-binding-ex';
+import { PreventDefault } from './components/Event-Binding/Eventbinding- prevent-default';
+import { EventBindingPropagation } from './components/Event-Binding/eventbinding-propagation';
+import { EventBinding } from './components/Event-Binding/event-binding';
+import { CustomArgumentsEx } from './components/Event-Binding/custom-ArgumentsEx';
+import { MouseOverEvent } from './components/Event-Binding/mouse-event';
+import { MouseMoveEvent } from './components/Event-Binding/mouse-move';
+import { KeyPressKeyUpEvents } from './components/Event-Binding/keypress-keyup-event';
+import { ContextMenuEvent } from './components/Event-Binding/context-emnu-event';
+import { PropsExample } from './components/Props/props';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ClassBinding />
+    <PropsExample />
   </React.StrictMode>
 );
 

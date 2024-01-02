@@ -1,16 +1,15 @@
 import { useState } from "react";
-import './classbinding.css';
-export function ClassBinding(){
+export function ClassBindingEx(){
 
-    const [colorTheme, setColorTheme] = useState('light-theme');
+    const [colorTheme, setColorTheme] = useState('bg-light text-dark p-4 border border-3 border-dark rounded rounded-3');
     const [buttonTheme, setButtonTheme]= useState('btn btn-dark w-100');
 
     function handleThemeChange(e){
         if(e.target.checked) {
-            setColorTheme('dark-theme');
+        setColorTheme('bg-dark text-white p-4 border border-3 border-warning rounded rounded-3');
             setButtonTheme('btn btn-light w-100');
         } else {
-            setColorTheme('light-theme');
+            setColorTheme('bg-light text-dark p-4 border border-3 border-dark rounded rounded-3');
             setButtonTheme('btn btn-dark w-100');
         }
     }
