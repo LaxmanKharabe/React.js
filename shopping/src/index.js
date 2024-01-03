@@ -33,11 +33,13 @@ import { MouseMoveEvent } from './components/Event-Binding/mouse-move';
 import { KeyPressKeyUpEvents } from './components/Event-Binding/keypress-keyup-event';
 import { ContextMenuEvent } from './components/Event-Binding/context-emnu-event';
 import { PropsExample } from './components/Props/props';
+import { Props2 } from './components/Props/props2';
+import { Props3 } from './components/Props/props3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PropsExample />
+    <Props3 />
   </React.StrictMode>
 );
 
