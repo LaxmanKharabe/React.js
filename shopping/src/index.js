@@ -35,11 +35,15 @@ import { ContextMenuEvent } from './components/Event-Binding/context-emnu-event'
 import { PropsExample } from './components/Props/props';
 import { Props2 } from './components/Props/props2';
 import { Props3 } from './components/Props/props3';
+import { ConditionalRendering } from './components/Conditional rendering/conditional-rendering';
+import { RenderDemo } from './components/Conditional rendering/render-demo';
+import { ConditionalRenderForDynamicGrid } from './components/Conditional rendering/render-dynamic-using-condition';
+import { ConditionalRender } from './components/Conditional rendering/Comp-rend-on-condi';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Props3 />
+    <ConditionalRender />
   </React.StrictMode>
 );
 
