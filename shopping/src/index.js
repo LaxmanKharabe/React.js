@@ -39,11 +39,15 @@ import { ConditionalRendering } from './components/Conditional rendering/conditi
 import { RenderDemo } from './components/Conditional rendering/render-demo';
 import { ConditionalRenderForDynamicGrid } from './components/Conditional rendering/render-dynamic-using-condition';
 import { ConditionalRender } from './components/Conditional rendering/Comp-rend-on-condi';
+import { RenCompoOnCondition } from './components/Conditional rendering/render-example1';
+import { EditSave } from './components/Conditional rendering/edit-save';
+import { HooksDemo } from './components/Custome-Hooks-Demo/hooks-demo';
+import { ApiFetchHook } from './components/Custome-Hooks-Demo/apifetch-hook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ConditionalRender />
+    <ApiFetchHook />
   </React.StrictMode>
 );
 
