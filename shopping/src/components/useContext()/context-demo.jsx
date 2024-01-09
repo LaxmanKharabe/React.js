@@ -34,7 +34,6 @@ export function ContextDemo(){
             <UserContext.Provider value={{UserName: userName}}>
                 <h2>Index component- User Name <input type="text" onChange={UserNameHandle}/></h2>
                 <HomeComponent /> 
-
             </UserContext.Provider>
         </div>
     )

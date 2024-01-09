@@ -46,11 +46,13 @@ import { ApiFetchHook } from './components/Custome-Hooks-Demo/apifetch-hook';
 import { UseEfeectHook } from './components/useEffectHook()/useeffecthook-demo';
 import { InsertRecord } from './components/useEffectHook()/insert-data';
 import { ContextDemo } from './components/useContext()/context-demo';
+import { DisplayPropsCompo } from './components/Props/paraent-component';
+import DisplayContextDataTranfer from './components/useContext()/display-conetxt-tranfer-data';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ContextDemo />
+    <DisplayContextDataTranfer />
   </React.StrictMode>
 );
 
