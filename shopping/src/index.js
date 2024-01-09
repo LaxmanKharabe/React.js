@@ -43,11 +43,14 @@ import { RenCompoOnCondition } from './components/Conditional rendering/render-e
 import { EditSave } from './components/Conditional rendering/edit-save';
 import { HooksDemo } from './components/Custome-Hooks-Demo/hooks-demo';
 import { ApiFetchHook } from './components/Custome-Hooks-Demo/apifetch-hook';
+import { UseEfeectHook } from './components/useEffectHook()/useeffecthook-demo';
+import { InsertRecord } from './components/useEffectHook()/insert-data';
+import { ContextDemo } from './components/useContext()/context-demo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ApiFetchHook />
+    <ContextDemo />
   </React.StrictMode>
 );
 
