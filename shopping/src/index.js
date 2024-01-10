@@ -48,12 +48,13 @@ import { InsertRecord } from './components/useEffectHook()/insert-data';
 import { ContextDemo } from './components/useContext()/context-demo';
 import { DisplayPropsCompo } from './components/Props/paraent-component';
 import DisplayContextDataTranfer from './components/useContext()/display-conetxt-tranfer-data';
+import { PracticeUseContext } from './components/useContext()/prctice-usecontext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <DisplayContextDataTranfer />
-  </React.StrictMode>
+  // <React.StrictMode>
+    <PracticeUseContext />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
