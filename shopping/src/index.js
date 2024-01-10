@@ -49,11 +49,14 @@ import { ContextDemo } from './components/useContext()/context-demo';
 import { DisplayPropsCompo } from './components/Props/paraent-component';
 import DisplayContextDataTranfer from './components/useContext()/display-conetxt-tranfer-data';
 import { PracticeUseContext } from './components/useContext()/prctice-usecontext';
+import {ReducerDemo} from './components/useReducer()/usereducer-demo';
+import { UseReducerExample } from './components/useReducer()/usereducer-example';
+import { AddOrRemoveItem } from './components/useReducer()/addremove.example';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <PracticeUseContext />
+    <AddOrRemoveItem />
   // </React.StrictMode>
 );
 

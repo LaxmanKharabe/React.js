@@ -1,0 +1,9 @@
+input::placeholder{
+    color: #1f1b1b !important;
+}
+.custom-height{
+    height: 100vh;
+}
+.custom-width{
+    width: 100px !important;
+}
