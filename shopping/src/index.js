@@ -52,11 +52,12 @@ import { PracticeUseContext } from './components/useContext()/prctice-usecontext
 import {ReducerDemo} from './components/useReducer()/usereducer-demo';
 import { UseReducerExample } from './components/useReducer()/usereducer-example';
 import { AddOrRemoveItem } from './components/useReducer()/addremove.example';
+import ListMain from './TodoList/todolist-main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <AddOrRemoveItem />
+    <ListMain />
   // </React.StrictMode>
 );
 
