@@ -53,11 +53,13 @@ import {ReducerDemo} from './components/useReducer()/usereducer-demo';
 import { UseReducerExample } from './components/useReducer()/usereducer-example';
 import { AddOrRemoveItem } from './components/useReducer()/addremove.example';
 import ListMain from './TodoList/todolist-main';
+import { UseRefDemo } from './components/useRef()/useref-demo';
+import { SlideShow } from './components/useRef()/slide-show';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <ListMain />
+    <SlideShow />
   // </React.StrictMode>
 );
 
