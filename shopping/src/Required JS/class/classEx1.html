@@ -1,0 +1,20 @@
+<script>
+    class Product{
+        Name = "Samsung TV";
+        Price= 20000;
+        stock = true;
+        cities = ["Delhi", "Hyd"];
+        Rating = {'Rate': 3.5, Count: 2000};
+        Display(){
+            document.write(`Name: ${this.Name} <br> Price: ${this.Price} <br>
+            Stock: ${(this.stock == true)?"Available": "Out of stock"}<br>
+            Cities: ${this.cities.map(city=>city)} <br>
+            Rating: ${this.Rating.Rate} from ${this.Rating.Count} people <br>`);
+        };
+    };
+
+    const obj = new Product();
+    obj.Display();
+    obj.Name = "Vijay";
+    obj.Display();
+</script>
