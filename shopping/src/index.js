@@ -55,11 +55,12 @@ import { AddOrRemoveItem } from './components/useReducer()/addremove.example';
 import ListMain from './TodoList/todolist-main';
 import { UseRefDemo } from './components/useRef()/useref-demo';
 import { SlideShow } from './components/useRef()/slide-show';
+import { DataComp } from './Class-components/class-como';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <SlideShow />
+    <DataComp />
   // </React.StrictMode>
 );
 
