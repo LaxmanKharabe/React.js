@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Example {
+            constructor() {
+                this.value = 42;
+
+                // Regular function
+                this.regularFunction = function () {
+                    console.log("Regular function:", this.value);
+                };
+
+                // Arrow function
+                this.arrowFunction = () => {
+                    console.log("Arrow function:", this.value);
+                };
+            }
+        }
+
+        const exampleInstance = new Example();
+
+        // Call the methods
+        exampleInstance.regularFunction(); // Regular function: undefined or an error (depends on the context)
+        exampleInstance.arrowFunction();   // Arrow function: 42 (correctly captures the value of this)
+
+    </script>
+</body>
+
+</html>
