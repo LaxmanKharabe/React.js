@@ -60,12 +60,13 @@ import { ClassLogin } from './Class-components/class-props/class-login';
 import { ClassEventsDemo } from './Class-components/class-events/class-events-comp';
 import { ClassEveExample } from './Class-components/class-events/class-events-Ex';
 import { ClassExample } from './Class-components/class-demo/class-example';
+import { CompoDidMount } from './Class-components/ComponentDidMount()/component-did-mount';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <ClassExample />
+    <CompoDidMount />
   // </React.StrictMode>
 );
 
