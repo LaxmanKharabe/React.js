@@ -61,12 +61,14 @@ import { ClassEventsDemo } from './Class-components/class-events/class-events-co
 import { ClassEveExample } from './Class-components/class-events/class-events-Ex';
 import { ClassExample } from './Class-components/class-demo/class-example';
 import { CompoDidMount } from './Class-components/ComponentDidMount()/component-did-mount';
+import ReactFormsDemo from './components/react-forms/react-forms-demo';
+import { FormikDemo } from './components/react-forms/formik-forms-demo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <CompoDidMount />
+    <FormikDemo />
   // </React.StrictMode>
 );
 
