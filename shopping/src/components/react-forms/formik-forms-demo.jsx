@@ -1,6 +1,8 @@
 import { useFormik } from "formik";
+import { useState } from "react";
 
 export function FormikDemo(){
+    const [getData, setData] =useState({Name: '', Age: '', Mobile: '', City: ''})
     const formik = useFormik({
         initialValues: {
             Name: '',
@@ -9,6 +11,12 @@ export function FormikDemo(){
             City: ''
         },
         onSubmit: (value) => {
+            setData({
+                Name: value.Name,
+                Age: value.Age,
+                Mobile: value.Mobile,
+                City: value.City
+            })
             console.log(JSON.stringify(value));
         }
     })
@@ -36,13 +44,13 @@ export function FormikDemo(){
                 </dl>
                 <dl className="col-6">
                     <dt>User Name</dt>
-                    <dd>{formik.values.Name}</dd>
+                    <dd>{getData.Name}</dd>
                     <dt>Age</dt>
-                    <dd>{formik.values.Age}</dd>
+                    <dd>{getData.Age}</dd>
                     <dt>Mobile number</dt>
                     <dd></dd>
                     <dt>City</dt>
-                    <dd>{formik.values.City}</dd>
+                    <dd>{getData.City}</dd>
                 </dl>
             </form>
         </div>
