@@ -63,16 +63,17 @@ import { ClassExample } from './Class-components/class-demo/class-example';
 import { CompoDidMount } from './Class-components/ComponentDidMount()/component-did-mount';
 import ReactFormsDemo from './components/react-forms/react-forms-demo';
 import { FormikDemo } from './components/react-forms/formik-forms-demo';
+import FormikValidate from './components/react-forms/formik-validate';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-    <FormikDemo />
-  // </React.StrictMode>
+  <React.StrictMode>
+    <FormikValidate />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals(console.log);
