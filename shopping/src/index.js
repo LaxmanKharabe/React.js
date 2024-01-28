@@ -64,12 +64,15 @@ import { CompoDidMount } from './Class-components/ComponentDidMount()/component-
 import ReactFormsDemo from './components/react-forms/react-forms-demo';
 import { FormikDemo } from './components/react-forms/formik-forms-demo';
 import FormikValidate from './components/react-forms/formik-validate';
+import { FormikGetFieldProps } from './components/react-forms/formik-getFieldProps';
+import { FormikValidationSchema } from './components/react-forms/formik-validation-schema';
+import { FormikPreDefinedComponent } from './components/react-forms/formik-components';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormikValidate />
+    <FormikPreDefinedComponent />
   </React.StrictMode>
 );
 
