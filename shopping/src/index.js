@@ -67,12 +67,13 @@ import FormikValidate from './components/react-forms/formik-validate';
 import { FormikGetFieldProps } from './components/react-forms/formik-getFieldProps';
 import { FormikValidationSchema } from './components/react-forms/formik-validation-schema';
 import { FormikPreDefinedComponent } from './components/react-forms/formik-components';
+import { FormikFormStateValidation } from './components/react-forms/formik-form-sate-validation';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormikPreDefinedComponent />
+    <FormikFormStateValidation />
   </React.StrictMode>
 );
 
