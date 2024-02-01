@@ -20,6 +20,7 @@ import { UseEffecHook } from './components/useEffectHook/UseEffectHook';
 import { UseEffectExample } from './components/useEffectHook/useEffectExample';
 import { FackStore } from './components/useEffectHook/fakestoreapi';
 import { Shopping } from './components/useEffectHook/shopping';
+import { UseEffectDependencyEx } from './components/useEffectHook/useeffect-dependency-ex';
 import { StyleBinding } from './components/Style-Binding/styleBinding';
 import { HideShow } from './components/Style-Binding/hindshowStyleBinding';
 import { ClassBinding } from './components/ClassBinding/classbinding';
@@ -70,11 +71,12 @@ import { FormikPreDefinedComponent } from './components/react-forms/formik-compo
 import { FormikFormStateValidation } from './components/react-forms/formik-form-sate-validation';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <FormikFormStateValidation />
-  </React.StrictMode>
+  // <React.StrictMode>
+    <UseEffectDependencyEx />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
