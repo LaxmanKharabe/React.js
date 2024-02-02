@@ -1,14 +1,16 @@
+
+
 export function Login(){
     return(
-        <div className="container-fluid mt-2 bg-light w-50 p-3">
+        <div>
             <h2>User Login</h2>
             <dl>
-                <dt>User name</dt>
-                <dd><input type="text"/></dd>
+                <dt>User Name</dt>
+                <dd><input type="text"></input></dd>
                 <dt>Password</dt>
-                <dd><input type="password"/></dd>
-                <dd><button className="btn btn-primary">Login</button></dd>
+                <dd><input type="password"></input></dd>
             </dl>
+            <button>Login</button>
         </div>
     )
 }

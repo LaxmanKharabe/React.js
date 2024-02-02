@@ -1,7 +1,7 @@
-export function NavBar(){
+export function Details(){
     return(
         <div className="container-fluid">
-            this is nav bar component
+            <h3>Details results</h3>
         </div>
     )
 }

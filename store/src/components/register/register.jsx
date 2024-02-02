@@ -1,18 +1,20 @@
+
+
 export function Register(){
     return(
-        <div className="container-fluid mt-2 bg-light w-50 p-3">
+        <div>
             <h2>Register User</h2>
             <dl>
-                <dt>User name</dt>
-                <dd><input type="text"/></dd>
+                <dt>User Name</dt>
+                <dd><input type="text"></input></dd>
                 <dt>Password</dt>
-                <dd><input type="password"/></dd>
-                <dt>E-mail</dt>
-                <dd><input type="email"/></dd>
-                <dt>Mobile number</dt>
-                <dd><input type="number" /></dd>
-                <dd><button className="btn btn-primary">Register</button></dd>
+                <dd><input type="password"></input></dd>
+                <dt>Email</dt>
+                <dd><input type="email"></input></dd>
+                <dt>Mobile</dt>
+                <dd><input type="mobile"></input></dd>
             </dl>
+            <button>Login</button>
         </div>
     )
 }

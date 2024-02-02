@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+// import '../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.css';
+import UseParamsHookDemo from './components/useParams/creating-and-passing-parameters/use-params-hook';
+import FakeStoreApiForUseParamApi from './components/useParams/ex-using-fakestore-api/fakestore-api';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <FakeStoreApiForUseParamApi />
   </React.StrictMode>
 );
 
