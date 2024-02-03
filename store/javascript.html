@@ -1,0 +1,11 @@
+<script>
+    async function f() {
+    let result = 'first!';
+    let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('done!'), 4000);
+    });
+    result = await promise;
+    console.log(result);
+    }
+    f();
+</script>
