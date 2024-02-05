@@ -7,13 +7,16 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import UseParamsHookDemo from './components/useParams/creating-and-passing-parameters/use-params-hook';
 import FakeStoreApiForUseParamApi from './components/useParams/ex-using-fakestore-api/fakestore-api';
-import { RouterOutletDemo } from './components/router-outlet/router-outlet-demo';
+import { RouterOutletDemo } from './components/router-outlet-and-nested-route/router-outlet-demo';
 import RoutingStarter from './components/useNavigate/routing-starter';
+import { CookieHome } from './components/react-cookies-library/home';
+import { CookiesRoutes } from './components/react-cookies-library/all-routes-cookies';
+import { VideoIndex } from './components/react-cookies-library/autentication/VideoChannel-Index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RoutingStarter />
+    <VideoIndex />
   </React.StrictMode>
 );
 

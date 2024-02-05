@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import { Login } from "../login/login";
 import { Register } from "../register/register";
-import { Home } from "../home/home";
+import { LinksForOutlet } from "./links-outlet";
 
 
 export function RouterOutletDemo(){
@@ -9,9 +9,11 @@ export function RouterOutletDemo(){
         <div className="container-fluid">
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="login" element={<Login />} />
-                    <Route path="register" element={<Register />} />
+                    {/* Nested Route */}
+                    <Route path="/" element={<LinksForOutlet />}> 
+                        <Route path="login" element={<Login />} />
+                        <Route path="register" element={<Register />} />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </div>
