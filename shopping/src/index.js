@@ -69,13 +69,14 @@ import { FormikGetFieldProps } from './components/react-forms/formik-getFieldPro
 import { FormikValidationSchema } from './components/react-forms/formik-validation-schema';
 import { FormikPreDefinedComponent } from './components/react-forms/formik-components';
 import { FormikFormStateValidation } from './components/react-forms/formik-form-sate-validation';
+import PracticePropsParent from './components/Practice/practice-props';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <UseEffectDependencyEx />
+    <PracticePropsParent />
   // </React.StrictMode>
 );
 
