@@ -12,11 +12,12 @@ import RoutingStarter from './components/useNavigate/routing-starter';
 import { CookieHome } from './components/react-cookies-library/home';
 import { CookiesRoutes } from './components/react-cookies-library/all-routes-cookies';
 import { VideoIndex } from './components/react-cookies-library/autentication/VideoChannel-Index';
+import ParentComponent from './components/use-context/ParentComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <VideoIndex />
+    <ParentComponent />
   </React.StrictMode>
 );
 

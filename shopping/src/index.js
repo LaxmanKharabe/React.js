@@ -70,13 +70,16 @@ import { FormikValidationSchema } from './components/react-forms/formik-validati
 import { FormikPreDefinedComponent } from './components/react-forms/formik-components';
 import { FormikFormStateValidation } from './components/react-forms/formik-form-sate-validation';
 import PracticePropsParent from './components/Practice/practice-props';
+import Parent from './components/useContext()/context-data-tranfer';
+import CounterReducer from './components/useReducer()/use-reducer-ex';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <PracticePropsParent />
+    <ContextDemo />
   // </React.StrictMode>
 );
 
