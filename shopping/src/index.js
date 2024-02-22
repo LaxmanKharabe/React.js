@@ -72,6 +72,7 @@ import { FormikFormStateValidation } from './components/react-forms/formik-form-
 import PracticePropsParent from './components/Practice/practice-props';
 import Parent from './components/useContext()/context-data-tranfer';
 import CounterReducer from './components/useReducer()/use-reducer-ex';
+import FilipkarMove from './components/Event-Binding/filipkarMove';
 
 
 
@@ -79,7 +80,7 @@ import CounterReducer from './components/useReducer()/use-reducer-ex';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <ContextDemo />
+    <FilipkarMove />
   // </React.StrictMode>
 );
 
